@@ -1,4 +1,9 @@
 $icon-font-path: '../fonts/';
+$height-iframe: 300px;
+$height-iframe-big: 400px;
+
+$width-iframe: 95%;
+$width-iframe-big: 100%;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -11,7 +16,7 @@ body {
 
 .main-title {
   font-family: 'Special Elite','serif';
-  font-size: 150px;
+  font-size: 60px;
   font-weight:normal;
 }
 
@@ -19,7 +24,7 @@ body {
   font-family: 'Special Elite','serif';
   margin-top: -10px;
   text-align: center;
-  font-size: 35px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -37,10 +42,10 @@ body {
 .overlay {
    background:transparent; 
    position:relative; 
-   width:640px;
-   height:480px; /* your iframe height */
-   top:480px;  /* your iframe height */
-   margin-top:-480px;  /* your iframe height */
+   width: $width-iframe;
+   height: $height-iframe; /* your iframe height */
+   top: $height-iframe;  /* your iframe height */
+   margin-top: -$height-iframe;  /* your iframe height */
 }
 
 .info-section {
@@ -53,10 +58,13 @@ body {
   text-align: center;
   .title {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 22px;
   }
   .name { 
-    font-size: 22px;
+    font-size: 16px;
+  }
+  .director {
+    padding-bottom: 20px;
   }
 }
 
@@ -68,10 +76,10 @@ body {
 }
 
 .first-panel {
-  background-image: url("/images/background_cover.png");
-  background-position: center;
+  background-image: url("/images/background_cover_mobile.png");
+  background-position: bottom;
   background-size: cover;
-  height: 1200px;
+  height: 570px;
   margin-top: 50px;
 }
 
@@ -203,6 +211,12 @@ time.icon span
   }
 }
 
+.map {
+  width: $width-iframe;
+  height: $height-iframe;
+  margin-top: 40px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -217,13 +231,43 @@ time.icon span
     padding-right: 0;
   }
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+  .main-title {
+    font-size: 150px;
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  .subtitle {
+    font-size: 35px;
+  }
+
+  .first-panel {
+    background-position: center;
+    background-image: url("/images/background_cover.png");
+    background-size: cover;
+    height: 1200px;
+    margin-top: 50px;
+  }
+
+  .map {
+    width: $width-iframe-big;
+    height: $height-iframe-big;
+    margin-top: 0px;
+  }
+
+  .overlay {
+     background:transparent; 
+     position:relative; 
+     width: $width-iframe-big;
+     height: $height-iframe-big;
+     top: $height-iframe-big;
+     margin-top: -$height-iframe-big;
+  }
+
+  .credits-section {
+    .title {
+      font-size: 30px;
+    }
+    .name { 
+      font-size: 22px;
+    }
   }
 }
