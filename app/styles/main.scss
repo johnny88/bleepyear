@@ -218,7 +218,7 @@ time.icon span
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .container {
     max-width: 1000px;
   }
@@ -251,6 +251,118 @@ time.icon span
     width: $width-iframe-big;
     height: $height-iframe-big;
     margin-top: 0px;
+  }
+
+  .overlay {
+     background:transparent; 
+     position:relative; 
+     width: $width-iframe-big;
+     height: $height-iframe-big;
+     top: $height-iframe-big;
+     margin-top: -$height-iframe-big;
+  }
+
+  .credits-section {
+    .title {
+      font-size: 30px;
+    }
+    .name { 
+      font-size: 22px;
+    }
+  }
+}
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-title {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 35px;
+  }
+
+  .first-panel {
+    background-position: bottom;
+    background-image: url("/images/background_cover_mobile.png");
+    background-size: cover;
+    height: 800px;
+    margin-top: 50px;
+  }
+
+  .map {
+    width: $width-iframe-big;
+    height: $height-iframe-big;
+    margin-top: 40px;
+  }
+
+  .overlay {
+     background:transparent; 
+     position:relative; 
+     width: $width-iframe-big;
+     height: $height-iframe-big;
+     top: $height-iframe-big;
+     margin-top: -$height-iframe-big;
+  }
+
+  .credits-section {
+    .title {
+      font-size: 30px;
+    }
+    .name { 
+      font-size: 22px;
+    }
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-title {
+    font-size: 120px;
+  }
+
+  .subtitle {
+    font-size: 35px;
+  }
+
+  .first-panel {
+    background-position: bottom;
+    background-image: url("/images/background_cover_mobile.png");
+    background-size: cover;
+    height: 950px;
+    margin-top: 50px;
+  }
+
+  .map {
+    width: $width-iframe-big;
+    height: $height-iframe-big;
+    margin-top: 40px;
   }
 
   .overlay {
