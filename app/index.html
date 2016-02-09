@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
     <!-- endbuild -->
     <link rel="alternate" href="http://bleepyear.com" hreflang="en-us" />
     
@@ -20,20 +21,18 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="https://twitter.com/bleepyearshow" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+        </ul>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Bleep Year Show</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-          </ul>
-        </div>
+        </div>        
       </div>
     </nav>
 
-    <div class="first-panel">
-      <!-- <div class="background"></div> -->
+    <div class="title-panel">
       <div class="container title-section">
         <img src="/images/second_city_logo.png" height="70px"class="presents">
         <h1 class="main-title">Bleep Year</h1>
@@ -41,29 +40,34 @@
       </div>
     </div>
 
-    <div class="second-panel">
+    <div class="info-panel">
       <div class="container info-section">
         <div class="row">
           <div class="col-lg-6 description-inner">
-            <time datetime="2014-09-20" class="icon">
-              <em>Sunday</em>
-              <strong>February</strong>
-              <span>28</span>
-            </time>
-            <div class="address">
-              <div>Second City Main Stage</div>
-              <div>51 Mercer Street</div>
-            </div>
+            <div><span><i class="fa fa-calendar-check-o"></i></i></span> Sunday February 28, 2016</div>
+            <div><span><i class="fa fa-clock-o"></i></span> Doors Open: 4:00 PM</div>
+            <div><span><i class="fa fa-ticket"></i></span> Tickets: $10</div>
+            <div class="discount">Free with valid SCTC Student Card</div>
+            <div><divspan><i class="fa fa-location-arrow"></i></span> Second City Main Stage</div>
+            <div><span><i class="fa fa-map-marker"></i></span> 51 Mercer Street</div>
           </div>
           <div class="col-lg-6">
-            <div class="overlay" onClick="style.pointerEvents='none'"></div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.132772634426!2d-79.39360788450253!3d43.64540587912158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d0ac01adf1%3A0x22a3c473fdf4debe!2s51+Mercer+St%2C+Toronto%2C+ON+M5V+9G9!5e0!3m2!1sen!2sca!4v1453854917908&zoom=20" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="third-panel">
+    <div class="social-media-panel">
+      <div class="container twitter-section-container">
+        <div class="twitter-section">
+          <a class="twitter-timeline" href="https://twitter.com/bleepyearshow" data-widget-id="696110721982185472">Tweets by @bleepyearshow</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>  
+      </div>
+    </div>
+
+    <div class="credit-panel">
       <div class="container credits-section">
         <div class='director'>
           <div class="title">Director</div>
