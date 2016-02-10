@@ -39,5 +39,10 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "babel": "^6.5.1",
+    "babel-register": "^6.5.1",
+    "gaze": "^0.5.2"
   }
 }

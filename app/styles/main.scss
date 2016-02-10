@@ -118,7 +118,7 @@ body {
 .description-inner {
   text-align: left;
   margin: auto;
-  padding: 8.5% 5%;
+  padding: 8.5% 0 8.5% 20px;
 }
 
 .address {
@@ -186,6 +186,9 @@ body {
   width: $width-iframe;
   height: $height-iframe;
   margin-top: 40px;
+}
+.maps iframe{
+    pointer-events: none;
 }
 
 .ticket-info {
